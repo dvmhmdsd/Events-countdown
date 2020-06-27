@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="intro">events countdown</h1>
+    </header>
+    <main class="container">
+      <form class="timer__form">
+        <div class="form__group">
+          <label for="title">Title of the event</label>
+          <input
+            type="text"
+            class="form__control"
+            id="title"
+            name="title"
+            placeholder="e.g: Code Baker"
+          />
+        </div>
+        <div class="form__group">
+          <label for="date">Date & time</label>
+          <input
+            type="datetime-local"
+            class="form__control"
+            id="date"
+            name="date"
+          />
+        </div>
+        <button type="submit" class="form__submit">start</button>
+      </form>
+
+      <section class="timers"></section>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

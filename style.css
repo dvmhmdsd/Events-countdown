@@ -1,0 +1,113 @@
+body {
+  background-color: beige;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.intro {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+/* The timer form style */
+.timer__form {
+  display: flex;
+}
+
+.form__group {
+  width: 35%;
+  margin: 2rem;
+}
+
+.form__group * {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.form__control {
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+#title.form__control {
+  padding: 0.53rem;
+}
+
+.form__control:focus {
+  border-color: darkcyan;
+}
+
+.form__submit {
+  height: 100%; /* The height here is to make the button not to take the height because of the flex */
+  margin-top: 5.8%;
+  padding: 0.65rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 139, 139, 0.8);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  background-color: rgba(0, 139, 139, 1);
+}
+
+/* The timers style */
+.timers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.timer__card {
+  background-color: snow;
+  box-shadow: 1px 1px 5px #999;
+  padding: 1rem;
+  border-radius: 9px;
+  margin: 1rem;
+  width: 40%;
+}
+
+.card__title {
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.card__counter {
+  font-size: 1.1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.card__item {
+  background-color: rgb(61, 61, 61);
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 87.96%;
+}
+
+.error-message {
+  background-color: tomato;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  box-shadow: 0 0 5px #000;
+}
